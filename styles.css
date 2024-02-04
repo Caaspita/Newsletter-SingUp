@@ -1,0 +1,90 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Rose: hsl(340, 100%, 69%);
+
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    --font: "Roboto", sans-serif;
+}
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 58px;
+    margin: 15px 0; 
+}
+p{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--DarkSlateGrey);
+}
+.content{
+    display: flex;
+    align-items: center;
+    background-color: var(--White);
+    padding: 30px 30px 30px 60px;
+    border-radius: 30px ;
+    gap: 60px;
+    max-width: 920px;
+}
+.icon-list{
+    display: flex;
+    gap: 15px;
+}
+.form{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+.form-label{
+    margin: 10px 0;
+    font-weight: bold;
+}
+.form-input{
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 17px 0 17px 20px;
+    border-style: none;
+    border: 1px solid var(--Grey);
+}
+.form-btn{
+    margin-top: 25px;
+    color: var(--White);
+    background-color: var(--DarkSlateGrey);
+    padding: 18px 0;
+    border-radius: 7px;
+    border-style: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background: linear-gradient(to right, var(--Rose),var(--Tomato));
+    box-shadow: 2px 5px 202px -20px var(--Tomato);
+}
+.success-content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    padding: 50px;
+    border-radius: 30px;
+    max-width: 500px;
+}
+.ocultar{
+    display: none;
+}

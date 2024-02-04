@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Caspita | Newsletter sign-up form with success message</title>
+
+</head>
+<body class="contenedor">
+  <section class="content">
+    <!-- Sign-up form start -->
+    <article class="content-info">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div>
+        <div class="icon-list">
+          <img src="./assets/images/icon-list.svg">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="icon-list">
+          <img src="./assets/images/icon-list.svg">
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="icon-list">
+          <img src="./assets/images/icon-list.svg">
+          <p>And much more!</p> 
+        </div>
+      </di>
+      <form class="form" id="form">
+        <label for="correo" class="form-label">Email address</label>
+        <input class="form-input" onclick="validacion()" id="correo" type="email" placeholder="email@company.com">
+        <button type="submit" class="form-btn">Subscribe to monthly newsletter</button>
+      </form>
+    </article>
+    <!-- Sign-up form end -->
+    <article class="content-img">
+      <img src="./assets/images/illustration-sign-up-desktop.svg">
+    </article>
+  </section>
+  <section class="ocultar success-content">
+    <!-- Success message start -->
+    <div>
+      <img src="./assets/images/icon-success.svg">
+    </div>
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email has been sent to <b>ash@loremcompany.com</b>.  
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="form-btn">Dismiss message</button>
+    <!-- Success message end -->
+  </section>
+  <script src="app.js"></script> 
+</body>
+</html>
