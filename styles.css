@@ -63,6 +63,14 @@ p{
     border-style: none;
     border: 1px solid var(--Grey);
 }
+.error-input{
+    font-size: 18px;
+    background-color: rgb(255, 230, 230);
+    border-radius: 7px;
+    padding: 17px 0 17px 20px;
+    border-style: none;
+    border: 1px solid red;
+}
 .form-btn{
     margin-top: 25px;
     color: var(--White);
@@ -75,7 +83,7 @@ p{
 }
 .form-btn:hover{
     background: linear-gradient(to right, var(--Rose),var(--Tomato));
-    box-shadow: 2px 5px 202px -20px var(--Tomato);
+    box-shadow: 0px 5px 20px -1px var(--Tomato);
 }
 .success-content{
     display: flex;
@@ -85,6 +93,42 @@ p{
     border-radius: 30px;
     max-width: 500px;
 }
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.label p{
+    font-size: 14px;
+    color: red;
+    margin: 0;
+}
 .ocultar{
     display: none;
+}
+
+ @media (max-width: 375px) {
+    .success-content{
+        height: 100vh;
+        justify-content: space-between;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-width: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    h1{
+        font-size: 26px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .content-img{
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
 }

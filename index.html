@@ -11,7 +11,7 @@
 
 </head>
 <body class="contenedor">
-  <section class="content">
+  <section class="content" id="content">
     <!-- Sign-up form start -->
     <article class="content-info">
       <h1>Stay updated!</h1>
@@ -31,9 +31,12 @@
         </div>
       </di>
       <form class="form" id="form">
-        <label for="correo" class="form-label">Email address</label>
-        <input class="form-input" onclick="validacion()" id="correo" type="email" placeholder="email@company.com">
-        <button type="submit" class="form-btn">Subscribe to monthly newsletter</button>
+        <div class="label">
+          <label for="correo" class="form-label">Email address</label>
+          <p  id="error" class="ocultar">Valid email required</p>
+        </div>
+        <input class="form-input" id="correo" placeholder="email@company.com">
+        <button type="submit" onclick="validacion()" class="form-btn">Subscribe to monthly newsletter</button>
       </form>
     </article>
     <!-- Sign-up form end -->
@@ -41,16 +44,19 @@
       <img src="./assets/images/illustration-sign-up-desktop.svg">
     </article>
   </section>
-  <section class="ocultar success-content">
+  <section class="ocultar success-content" id="success-content">
     <!-- Success message start -->
     <div>
-      <img src="./assets/images/icon-success.svg">
-    </div>
-    <h1>Thanks for subscribing!</h1>
+      <div>
+        <img src="./assets/images/icon-success.svg">
+      </div>
+      <h1>Thanks for subscribing!</h1>
     <p>
       A confirmation email has been sent to <b>ash@loremcompany.com</b>.  
       Please open it and click the button inside to confirm your subscription.
     </p>
+    </div>
+    
     <button class="form-btn">Dismiss message</button>
     <!-- Success message end -->
   </section>
